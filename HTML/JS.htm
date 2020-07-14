@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script>
+                    function light(sw) {
+                      var pic;
+                      if (sw == 0) {
+                        pic = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwSWoLx6UYL7YiXPT_8nW1N-NmCaZHCcxIpQ&usqp=CAU"
+                      } else {
+                        pic = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT69582Lu8HT9cioxFt2hQxf1vma39yG63Ygw&usqp=CAU"
+                      }
+                      document.getElementById('myImage').src = pic;
+                      }
+              </script>
+    </head>
+    <body>
+            <h1 style="font-size: 40px; color: darkgreen;">My First JavaScript</h1>
+            <p style="font-size: 30px;">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+            <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwSWoLx6UYL7YiXPT_8nW1N-NmCaZHCcxIpQ&usqp=CAU" width="200" height="180">
+            <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+            </p>
+    </body>
+</html>
