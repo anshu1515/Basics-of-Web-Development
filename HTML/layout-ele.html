@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            header{
+                background-color: coral;
+                padding: 20px;
+                text-align: center;
+                font-size: 30px;
+            }
+            footer{
+                background-color: darkgrey;
+                padding: 20PX;
+                text-align: center;
+                font-size: 35px;
+            }
+            nav{
+                float: left;
+                width: 30%;
+                height: 300px;
+                background-color: cornflowerblue;
+                padding: 20px;
+            }
+            nav ul{
+                padding: 20px;
+            }
+            article{
+                float: left;
+                padding: 10px;
+                width: 70%;
+                background-color: yellow;
+                height: 300px;
+            }
+            section::after{
+                content: "";
+                display: inline;
+                clear: both;
+            }  
+            @media(max-width: 600px){
+                nav,article{
+                    width: 100%;
+                    height: auto;
+                }
+            } 
+            p{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Layout Elements</h1>
+        <p>These elements helps in fixing the page properly and nicely.We can use layout elements for proper shaping of our web page.</p>
+        <header>CORONA</header>
+        <section>
+        <nav>
+            <ul>
+                <li><a href="#">Major Effects</a></li>
+                <li><a href="#">Behaviour</a></li>
+                <li><a href="#">Precautions</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>COVID-19</h1>
+            <p>Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans, these viruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold, while more lethal varieties can cause SARS, MERS, and COVID-19.</p>
+            <p>Symptoms in other species vary: in chickens, they cause an upper respiratory tract disease, while in cows and pigs they cause diarrhea. There are as yet no vaccines or antiviral drugs to prevent or treat human coronavirus infections.</p>
+        </article>
+        </section>
+        <footer>STAY HOME STAY SAFE!</footer>
+    </body>
+</html>
